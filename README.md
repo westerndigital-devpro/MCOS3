@@ -4,7 +4,6 @@
 ## CONTENTS
 1. [INTRODUCTION](#introduction)
 2. [COMMAND LINE EXAMPLE](#command-line-example)
-2. [APPS PACKAGE SDK V2.0](#apps-package-sdk-v2.0)
 3. [GETTING STARTED: USING MKSAPKG](#GETTING-STARTED:-USING-MKSAPKG)
 4. [WRITE YOUR OWN APKG.RC FILE](#WRITE_YOUR_OWN_APKG.RC_FILE)
 5. [APPS PACKAGE NAMING RULES & HEADER DEFINITION](#APPS_PACKAGE_NAMING_RULES_&_HEADER_DEFINITION)
@@ -26,7 +25,7 @@ Apps Package is a small package management system that designed for the My Cloud
 [^](#contents)
 ---
 
-## APPS PACKAGE SDK V2.0
+## COMMAND LINE EXAMPLE
 
 The Apps Package SDK v2.0 includes [MKSAPKG](https://developer.westerndigital.com/develop/wd/sdk.html#downloads), a tool that wraps your app into an Apps Package that can be installed on a My Cloud OS3 NAS device. It also includes a sample that guides you in creating your own app.
 
