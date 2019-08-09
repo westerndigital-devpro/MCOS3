@@ -661,7 +661,7 @@ The desc.xml example for Icecast:
 &lt;/config&gt;
 </pre>
 
-Note: the translated app descriptions you add to desc.xml will be used to build your app's entry in the App Catalog when you [submit your app](https://developer.westerndigital.com/develop/wd/forms/mcos3on/submit-app-new-mcos3on.html).
+Note: the translated app descriptions you add to desc.xml will be used to build your app's entry in the App Catalog when you [submit your app](https://developer.westerndigital.com/develop/wd/submit-app-new-mcos3on.html).
 
 As you can see from the desc.xml example, your app can be added to the App Catalog in the following regions &amp; locales:
 
