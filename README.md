@@ -23,14 +23,14 @@ Apps Package is a small package management system that designed for the My Cloud
 ![image](https://github.com/westerndigital-devpro/MCOS3/blob/master/images/mcos3/image002.jpg)
 
 [^](#contents)
-
+---
 
 ## APPS PACKAGE SDK V2.0
 
 The Apps Package SDK v2.0 includes [MKSAPKG](https://developer.westerndigital.com/develop/wd/sdk.html#downloads), a tool that wraps your app into an Apps Package that can be installed on a My Cloud OS3 NAS device. It also includes a sample that guides you in creating your own app.
 
 [^](#contents)
-
+---
 
 ## GETTING STARTED: USING MKSAPKG
 
@@ -77,7 +77,7 @@ If you are missing the xml2 library, use the following for Fedora:
 <pre>$ yum -y install libxml2 libxml2-devel</pre>
 
 [^](#contents)
-
+---
 
 ## WRITE YOUR OWN APKG.RC FILE
 
@@ -313,7 +313,7 @@ Header magic number definition: the last byte of magic number must be <b>0x5a</b
 <pre>
 WDMyCloudEX4: {0x4c,0x69,0x67,0x68,0x74,0x6e,0x69,0x5a}
 </pre>
-
+---
 
 ## WHEN WILL SHELL SCRIPT FILES BE CALLED
 
@@ -370,7 +370,7 @@ $INST_PATH/init.sh $INST_PATH
 When your app has its own configure file settings, you need to backup these files to other place in preinst.sh script file and copy files back in init.sh. Because remove.sh will remove all configuration files of this App on the hard disk and reinstall it in install.sh. Beware of incorrect shell script files which may cause the system to crash. For example, without the remove link from hard drive correctly, it may cause the system to format hard drive failure due to hard drive can't be un-mounted.
 
 [^](#contents)
-
+---
 
 ## APP SERVER
 
@@ -381,7 +381,7 @@ When your app has its own configure file settings, you need to backup these file
 The main purpose of Apps SDK v2.0 is implemented the App dependencies and configuration check.
 
 [^](#contents)
-
+---
 
 ## SAMPLE APP PACKAGE WITHOUT WEB UI
 
@@ -548,7 +548,7 @@ If an App is not installed correctly, then the package will not install, remove,
 When you are at the stage of development, it is recommended not to install other Apps. This is because a clean environment will help you to reduce development time for debugging.
 
 [^](#contents)
-
+---
 
 ## CREATE WEB PAGE
 
@@ -593,7 +593,7 @@ AddonIndexPage:     /web/index.html -&gt; you should have this file in /var/www/
 ![image](https://github.com/westerndigital-devpro/MCOS3/blob/master/images/mcos3/image013.jpg)
 
 [^](#contents)
-
+---
 
 ## MULTI-LANGUAGE SUPPORT
 
@@ -684,14 +684,14 @@ zh-CN - Chinese (China)
 zh-TW - Chinese (Taiwan)
 
 [^](#contents)
-
+---
 
 ## DOWNLOADS
 
 Visit the [DOWNLOADS](https://account.wdc.com/devportal) page to get the Apps Package SDK & compilers. This requires a free Developer Portal account - [CLICK HERE TO REGISTER](https://account.wdc.com/devportal).
 
 [^](#contents)
-
+---
 
 ----
 
