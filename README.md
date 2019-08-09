@@ -5,7 +5,7 @@
 1. [INTRODUCTION](#introduction)
 2. [COMMAND LINE EXAMPLE](#command-line-example)
 3. [GETTING STARTED: USING MKSAPKG](#getting-started-using-mksapkg)
-4. [WRITE YOUR OWN APKG.RC FILE](#write-your-own-apkg.rc-file)
+4. [WRITE YOUR OWN APKG.RC FILE](#write-your-own-apkgrc-file)
 5. [APPS PACKAGE NAMING RULES & HEADER DEFINITION](#apps-package-naming-rules-header-definition)
 6. [WHEN WILL SHELL SCRIPT FILES BE CALLED](#WHEN_WILL_SHELL_SCRIPT FILES BE CALLED)
 7. [APP SERVER](#APP SERVER)
