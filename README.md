@@ -1,5 +1,3 @@
-(../README.md)
-
 # My Cloud OS3 NAS Getting Started
 ----
 
