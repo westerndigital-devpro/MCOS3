@@ -1,18 +1,18 @@
 ## CONTENTS
-1. [INTRODUCTION](#section-introduction)
-2. [APPS PACKAGE SDK](#section-apps-package-sdk)
-3. [USING MKSAPKG](#section-using-mksapkg)
-4. [WRITE YOUR OWN APKG RC FILE](#section-write-your-own-apkg-rc-file)
-5. [APPS PACKAGE NAMING RULES AND HEADER DEFINITION](#section-apps-package-naming-rules-and-header-definition)
-6. [WHEN WILL SHELL SCRIPT FILES BE CALLED](#section-when-will-shell-script-files-be-called)
-7. [APP SERVER](#section-app-server)
-8. [SAMPLE APP PACKAGE WITHOUT WEB UI](#section-sample-app-package-without-web-ui)
-9. [CREATE WEB PAGE](#section-create-web-page)
-10. [MULTI-LANGUAGE SUPPORT](#section-multi-language-support)
-11. [DOWNLOADS](#section-downloads)
-12. [SUBMIT APP](#section-submit-app)
-13. [GET SUPPORT](#section-get-support)
-14. [APP SHOWCASE](#section-app-showcase)
+1. [INTRODUCTION](#introduction)
+2. [APPS PACKAGE SDK](#apps-package-sdk)
+3. [USING MKSAPKG](#using-mksapkg)
+4. [WRITE YOUR OWN APKG RC FILE](#write-your-own-apkg-rc-file)
+5. [APPS PACKAGE NAMING RULES AND HEADER DEFINITION](#apps-package-naming-rules-and-header-definition)
+6. [WHEN WILL SHELL SCRIPT FILES BE CALLED](#when-will-shell-script-files-be-called)
+7. [APP SERVER](#app-server)
+8. [SAMPLE APP PACKAGE WITHOUT WEB UI](#sample-app-package-without-web-ui)
+9. [CREATE WEB PAGE](#create-web-page)
+10. [MULTI-LANGUAGE SUPPORT](#multi-language-support)
+11. [DOWNLOADS](#downloads)
+12. [SUBMIT APP](#submit-app)
+13. [GET SUPPORT](#get-support)
+14. [APP SHOWCASE](#app-showcase)
 
 ---
 
@@ -22,7 +22,7 @@ Apps Package is a small package management system that designed for the My Cloud
 
 ![image](https://raw.githubusercontent.com/westerndigital-devpro/MCOS3/master/images/mcos3/image002.jpg)
 
-[^](#section-contents)
+[^](#contents)
 
 ---
 
@@ -30,7 +30,7 @@ Apps Package is a small package management system that designed for the My Cloud
 
 The Apps Package SDK v2.0 includes [MKSAPKG](https://developer.westerndigital.com/develop/wd/sdk.html#downloads), a tool that wraps your app into an Apps Package that can be installed on a My Cloud OS3 NAS device. It also includes a sample that guides you in creating your own app.
 
-[^](#section-contents)
+[^](#contents)
 
 ---
 
@@ -78,7 +78,7 @@ If you are missing the xml2 library, use the following for Fedora:
 
 <pre>$ yum -y install libxml2 libxml2-devel</pre>
 
-[^](#section-contents)
+[^](#contents)
 
 ---
 
@@ -280,7 +280,7 @@ Notes:
 
 <b>stop.sh:</b> Will stop App daemon.
 
-[^](#section-contents)
+[^](#contents)
 
 ---
 
@@ -323,7 +323,7 @@ Header magic number definition: the last byte of magic number must be <b>0x5a</b
 WDMyCloudEX4: {0x4c,0x69,0x67,0x68,0x74,0x6e,0x69,0x5a}
 </pre>
 
-[^](#section-contents)
+[^](#contents)
 
 ---
 
@@ -381,7 +381,7 @@ $INST_PATH/init.sh $INST_PATH
 
 When your app has its own configure file settings, you need to backup these files to other place in preinst.sh script file and copy files back in init.sh. Because remove.sh will remove all configuration files of this App on the hard disk and reinstall it in install.sh. Beware of incorrect shell script files which may cause the system to crash. For example, without the remove link from hard drive correctly, it may cause the system to format hard drive failure due to hard drive can't be un-mounted.
 
-[^](#section-contents)
+[^](#contents)
 
 ---
 
@@ -393,7 +393,7 @@ When your app has its own configure file settings, you need to backup these file
 
 The main purpose of Apps SDK v2.0 is implemented the App dependencies and configuration check.
 
-[^](#section-contents)
+[^](#contents)
 
 ---
 ---
@@ -562,7 +562,7 @@ If an App is not installed correctly, then the package will not install, remove,
 
 When you are at the stage of development, it is recommended not to install other Apps. This is because a clean environment will help you to reduce development time for debugging.
 
-[^](#section-contents)
+[^](#contents)
 
 ---
 
@@ -608,7 +608,7 @@ AddonIndexPage:     /web/index.html -&gt; you should have this file in /var/www/
 
 ![image](https://raw.githubusercontent.com/westerndigital-devpro/MCOS3/master/images/mcos3/image013.jpg)
 
-[^](#section-contents)
+[^](#contents)
 
 ---
 ---
@@ -701,7 +701,7 @@ zh-CN - Chinese (China)
 
 zh-TW - Chinese (Taiwan)
 
-[^](#section-contents)
+[^](#contents)
 
 ---
 
@@ -709,7 +709,7 @@ zh-TW - Chinese (Taiwan)
 
 Visit the [downloads page](https://developer.westerndigital.com/develop/wd/sdk/downloads.html) to get the Apps Package SDK & compilers. This requires a free Developer Portal account - [click here](https://account.wdc.com/devportal) to register.
 
-[^](#section-contents)
+[^](#contents)
 
 ---
 
@@ -720,20 +720,20 @@ https://developer.westerndigital.com/develop/wd/submit-app-new-mcos3on.html
 
 After your app is published, if you change code related to the My Cloud OS3 API, we ask that you resubmit to us for re-validation.
 
-[^](#section-contents)
+[^](#contents)
 
 ## GET SUPPORT
 Send us a message if you need help with your development activities or to learn where to acquire a My Cloud OS3 NAS device:
 
 https://developer.westerndigital.com/develop/wd/support-mcos3on.html
 
-[^](#section-contents)
+[^](#contents)
 
 ## APP SHOWCASE
 Check out apps built for My Cloud OS3 NAS devices:
 
 https://www.wdc.com/solutions/my-cloud-apps.html
 
-[^](#section-contents)
+[^](#contents)
 
 ---
