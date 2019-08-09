@@ -3,7 +3,7 @@
 
 ## CONTENTS
 1. [INTRODUCTION](#introduction)
-2. [APPS PACKAGE SDK V2.0](#apps-package-sdk-v20)
+2. [APPS PACKAGE SDK V2.0](#apps-package-sdk-v-20)
 3. [GETTING STARTED: USING MKSAPKG](#getting-started-using-mksapkg)
 4. [WRITE YOUR OWN APKG.RC FILE](#write-your-own-apkgrc-file)
 5. [APPS PACKAGE NAMING RULES AND HEADER DEFINITION](#apps-package-naming-rules-and-header-definition)
