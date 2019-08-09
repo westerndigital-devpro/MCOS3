@@ -1,38 +1,40 @@
-# My Cloud OS3 NAS SDK
-----
-
 ## CONTENTS
-1. [INTRODUCTION](#introduction)
-2. [APPS PACKAGE SDK V2.0](#apps-package-sdk-v20)
-3. [GETTING STARTED: USING MKSAPKG](#getting-started-using-mksapkg)
-4. [WRITE YOUR OWN APKG.RC FILE](#write-your-own-apkgrc-file)
-5. [APPS PACKAGE NAMING RULES AND HEADER DEFINITION](#apps-package-naming-rules-and-header-definition)
-6. [WHEN WILL SHELL SCRIPT FILES BE CALLED](#when-will-shell-script-files-be-called)
-7. [APP SERVER](#app-server)
-8. [SAMPLE APP PACKAGE WITHOUT WEB UI](#sample-app-package-without-web-ui)
-9. [CREATE WEB PAGE](#create-web-page)
-10. [MULTI-LANGUAGE SUPPORT](#multi-language-support)
-11. [DOWNLOADS](#downloads)
-----
+1. [INTRODUCTION](#section-introduction)
+2. [APPS PACKAGE SDK](#section-apps-package-sdk)
+3. [USING MKSAPKG](#section-using-mksapkg)
+4. [WRITE YOUR OWN APKG RC FILE](#section-write-your-own-apkg-rc-file)
+5. [APPS PACKAGE NAMING RULES AND HEADER DEFINITION](#section-apps-package-naming-rules-and-header-definition)
+6. [WHEN WILL SHELL SCRIPT FILES BE CALLED](#section-when-will-shell-script-files-be-called)
+7. [APP SERVER](#section-app-server)
+8. [SAMPLE APP PACKAGE WITHOUT WEB UI](#section-sample-app-package-without-web-ui)
+9. [CREATE WEB PAGE](#section-create-web-page)
+10. [MULTI-LANGUAGE SUPPORT](#section-multi-language-support)
+11. [DOWNLOADS](#section-downloads)
+12. [SUBMIT APP](#section-submit-app)
+13. [GET SUPPORT](#section-get-support)
+14. [APP SHOWCASE](#section-app-showcase)
 
-## INTRODUCTION
-Apps Package is a small package management system that designed for the My Cloud OS3 NAS devices. We refer to Add-ons in the document as Apps. As you can see by the below image, the UI refers to Add-ons as Apps. The SDK v2.0 provides basic functions to control packages. These controls are: install, remove, start, and stop. You only need to use the templates that are contained in the SDK, which are just simple shell scripts to create an App quickly and easily without writing complex programs.
-
-[VIEW SDK](./SDK/README.md)
-
-![image](https://github.com/westerndigital-devpro/MCOS3/blob/master/images/mcos3/image002.jpg)
-
-[^](#contents)
 ---
 
-## APPS PACKAGE SDK V2.0
+## INTRODUCTION
+
+Apps Package is a small package management system that designed for the My Cloud OS3 NAS devices. We refer to Add-ons in the document as Apps. As you can see by the below image, the UI refers to Add-ons as Apps. The SDK v2.0 provides basic functions to control packages. These controls are: install, remove, start, and stop. You only need to use the templates that are contained in the SDK, which are just simple shell scripts to create an App quickly and easily without writing complex programs.
+
+![image](https://raw.githubusercontent.com/westerndigital-devpro/MCOS3/master/images/mcos3/image002.jpg)
+
+[^](#section-contents)
+
+---
+
+## APPS PACKAGE SDK
 
 The Apps Package SDK v2.0 includes [MKSAPKG](https://developer.westerndigital.com/develop/wd/sdk.html#downloads), a tool that wraps your app into an Apps Package that can be installed on a My Cloud OS3 NAS device. It also includes a sample that guides you in creating your own app.
 
-[^](#contents)
+[^](#section-contents)
+
 ---
 
-## GETTING STARTED: USING MKSAPKG
+## USING MKSAPKG
 
 mksapkg is a tool that helps you create your own app for My Cloud OS3 NAS devices. It is included in the Apps Package SDK v2.0, and we provide the executable binary to run your app on our system. Users must install libxml2 and GNU “tar” in their Linux system to run mksapkg.
 
@@ -76,10 +78,11 @@ If you are missing the xml2 library, use the following for Fedora:
 
 <pre>$ yum -y install libxml2 libxml2-devel</pre>
 
-[^](#contents)
+[^](#section-contents)
+
 ---
 
-## WRITE YOUR OWN APKG.RC FILE
+## WRITE YOUR OWN APKG RC FILE
 
 All string characters cannot contain spaces except the description field:
 
@@ -137,11 +140,11 @@ Dropbox is set to “1”, and normal user can’t see the app.
 
 <b>Login by Admin:</b>
 
-![image](https://github.com/westerndigital-devpro/MCOS3/blob/master/images/mcos3/image003.jpg)
+![image](https://raw.githubusercontent.com/westerndigital-devpro/MCOS3/master/images/mcos3/image003.jpg)
 
 <b>Login by User:</b>
 
-![image](https://github.com/westerndigital-devpro/MCOS3/blob/master/images/mcos3/image004.jpg)
+![image](https://raw.githubusercontent.com/westerndigital-devpro/MCOS3/master/images/mcos3/image004.jpg)
 
 ### About CenterType
 
@@ -151,11 +154,11 @@ The CentherType value is “0”, and the setting page will pop-out.
 
 <b>Setting page build-in:</b>
 
-![image](https://github.com/westerndigital-devpro/MCOS3/blob/master/images/mcos3/image005.jpg)
+![image](https://raw.githubusercontent.com/westerndigital-devpro/MCOS3/master/images/mcos3/image005.jpg)
 
 <b>Setting page pop-out:</b>
 
-![image](https://github.com/westerndigital-devpro/MCOS3/blob/master/images/mcos3/Picture1.png)
+![image](https://raw.githubusercontent.com/westerndigital-devpro/MCOS3/master/images/mcos3/Picture1.png)
 
 ### About MinFWVer &amp; MaxFWVer
 
@@ -180,7 +183,7 @@ WebUI will show some notice information for Apps. If the App is completed by ALP
 
 Note: Support for each App should be obtained through the developer directly. The App's description in the WebUI shows support contact information.
 
-![image](https://github.com/westerndigital-devpro/MCOS3/blob/master/images/mcos3/image006.jpg)
+![image](https://raw.githubusercontent.com/westerndigital-devpro/MCOS3/master/images/mcos3/image006.jpg)
 
 ### About AddonIndexPage
 
@@ -188,7 +191,7 @@ If the “AddonIndexPage” is empty, the App will not provide a setting page.
 
 The WebUI will still show the “configure” button, but it will not work.
 
-![image](https://github.com/westerndigital-devpro/MCOS3/blob/master/images/mcos3/image007.jpg)
+![image](https://raw.githubusercontent.com/westerndigital-devpro/MCOS3/master/images/mcos3/image007.jpg)
 
 Dependency &amp; conflict rules defined by the App SDK v2.0:
 
@@ -251,7 +254,7 @@ When running mksapkg, it will parse apkg.rc to create apkg.xml, and apkg.xml wil
 &lt;/config&gt;
 </pre>
 
-![image](https://github.com/westerndigital-devpro/MCOS3/blob/master/images/mcos3/image008.jpg)
+![image](https://raw.githubusercontent.com/westerndigital-devpro/MCOS3/master/images/mcos3/image008.jpg)
 
 Notes:
 
@@ -276,6 +279,9 @@ Notes:
 <b>start.sh:</b> Will start App daemon.
 
 <b>stop.sh:</b> Will stop App daemon.
+
+[^](#section-contents)
+
 ---
 
 ## APPS PACKAGE NAMING RULES AND HEADER DEFINITION
@@ -316,6 +322,9 @@ Header magic number definition: the last byte of magic number must be <b>0x5a</b
 <pre>
 WDMyCloudEX4: {0x4c,0x69,0x67,0x68,0x74,0x6e,0x69,0x5a}
 </pre>
+
+[^](#section-contents)
+
 ---
 
 ## WHEN WILL SHELL SCRIPT FILES BE CALLED
@@ -357,7 +366,7 @@ When disabling an App, the following shell script will be called:
 $INST_PATH/stop.sh
 </pre>
 
-![image](https://github.com/westerndigital-devpro/MCOS3/blob/master/images/mcos3/image007.jpg)
+![image](https://raw.githubusercontent.com/westerndigital-devpro/MCOS3/master/images/mcos3/image007.jpg)
 
 When re-installing an App, the following shell script will be called:
 
@@ -372,7 +381,8 @@ $INST_PATH/init.sh $INST_PATH
 
 When your app has its own configure file settings, you need to backup these files to other place in preinst.sh script file and copy files back in init.sh. Because remove.sh will remove all configuration files of this App on the hard disk and reinstall it in install.sh. Beware of incorrect shell script files which may cause the system to crash. For example, without the remove link from hard drive correctly, it may cause the system to format hard drive failure due to hard drive can't be un-mounted.
 
-[^](#contents)
+[^](#section-contents)
+
 ---
 
 ## APP SERVER
@@ -383,7 +393,9 @@ When your app has its own configure file settings, you need to backup these file
 
 The main purpose of Apps SDK v2.0 is implemented the App dependencies and configuration check.
 
-[^](#contents)
+[^](#section-contents)
+
+---
 ---
 
 ## SAMPLE APP PACKAGE WITHOUT WEB UI
@@ -550,7 +562,8 @@ If an App is not installed correctly, then the package will not install, remove,
 
 When you are at the stage of development, it is recommended not to install other Apps. This is because a clean environment will help you to reduce development time for debugging.
 
-[^](#contents)
+[^](#section-contents)
+
 ---
 
 ## CREATE WEB PAGE
@@ -569,7 +582,7 @@ AddonUsedPort:
 
 Note: If your package does not require a GUI, make sure the AddonIndexPage field is empty.
 
-![image](https://github.com/westerndigital-devpro/MCOS3/blob/master/images/mcos3/image012.jpg)
+![image](https://raw.githubusercontent.com/westerndigital-devpro/MCOS3/master/images/mcos3/image012.png)
 
 In the Application page, we need to have an App icon and the recommended icon size is 128xn or nx128 (n &gt; 128).
 
@@ -593,9 +606,11 @@ AddonIndexPage:     index.html  -&gt; you should have this file in /var/www/hell
 AddonIndexPage:     /web/index.html -&gt; you should have this file in /var/www/hello/web/index.html
 </pre>
 
-![image](https://github.com/westerndigital-devpro/MCOS3/blob/master/images/mcos3/image013.jpg)
+![image](https://raw.githubusercontent.com/westerndigital-devpro/MCOS3/master/images/mcos3/image013.jpg)
 
-[^](#contents)
+[^](#section-contents)
+
+---
 ---
 
 ## MULTI-LANGUAGE SUPPORT
@@ -604,7 +619,7 @@ We support multiple languages in the app’s description. Please put language xm
 
 1. Put language xml file to the add-on folder.
 
-![image](https://github.com/westerndigital-devpro/MCOS3/blob/master/images/mcos3/image009.png)
+![image](https://raw.githubusercontent.com/westerndigital-devpro/MCOS3/master/images/mcos3/image009.png)
 
 2. Add link command for the desc.xml file to init.sh
 
@@ -618,7 +633,7 @@ You can put “desc.xml” to anywhere in add-on package, but you must link the 
 
 The Web UI will check the “desc.xml” file to show the indicated language.
 
-![image](https://github.com/westerndigital-devpro/MCOS3/blob/master/images/mcos3/Picture2.png)
+![image](https://raw.githubusercontent.com/westerndigital-devpro/MCOS3/master/images/mcos3/Picture2.png)
 
 The desc.xml example for Icecast:
 
@@ -686,18 +701,39 @@ zh-CN - Chinese (China)
 
 zh-TW - Chinese (Taiwan)
 
-[^](#contents)
+[^](#section-contents)
+
 ---
 
 ## DOWNLOADS
 
-Visit the [DOWNLOADS](https://account.wdc.com/devportal) page to get the Apps Package SDK & compilers. This requires a free Developer Portal account - [CLICK HERE TO REGISTER](https://account.wdc.com/devportal).
+Visit the [downloads page](https://developer.westerndigital.com/develop/wd/sdk/downloads.html) to get the Apps Package SDK & compilers. This requires a free Developer Portal account - [click here](https://account.wdc.com/devportal) to register.
 
-[^](#contents)
+[^](#section-contents)
+
 ---
 
-----
+## SUBMIT APP
+Submit your app for us to qualify &amp; publish in the My Cloud OS3 app catalog:
 
-| Updated  |  Rev       |
-|----------|-----------:|
-|GF        |v08082019   |
+https://developer.westerndigital.com/develop/wd/submit-app-new-mcos3on.html
+
+After your app is published, if you change code related to the My Cloud OS3 API, we ask that you resubmit to us for re-validation.
+
+[^](#section-contents)
+
+## GET SUPPORT
+Send us a message if you need help with your development activities or to learn where to acquire a My Cloud OS3 NAS device:
+
+https://developer.westerndigital.com/develop/wd/support-mcos3on.html
+
+[^](#section-contents)
+
+## APP SHOWCASE
+Check out apps built for My Cloud OS3 NAS devices:
+
+https://www.wdc.com/solutions/my-cloud-apps.html
+
+[^](#section-contents)
+
+---
