@@ -25,7 +25,7 @@ Apps Package is a small package management system that designed for the My Cloud
 [^](#contents)
 ---
 
-## COMMAND LINE EXAMPLE
+## APPS PACKAGE SDK V2.0
 
 The Apps Package SDK v2.0 includes [MKSAPKG](https://developer.westerndigital.com/develop/wd/sdk.html#downloads), a tool that wraps your app into an Apps Package that can be installed on a My Cloud OS3 NAS device. It also includes a sample that guides you in creating your own app.
 
@@ -276,6 +276,9 @@ Notes:
 <b>start.sh:</b> Will start App daemon.
 
 <b>stop.sh:</b> Will stop App daemon.
+---
+
+## APPS PACKAGE NAMING RULES AND HEADER DEFINITION
 
 ### Apps Package Naming Rules
 
