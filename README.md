@@ -3,10 +3,10 @@
 
 ## CONTENTS
 1. [INTRODUCTION](#introduction)
-2. [COMMAND LINE EXAMPLE](#command-line-example)
+2. [APPS PACKAGE SDK V2.0](#apps-package-sdk-v20)
 3. [GETTING STARTED: USING MKSAPKG](#getting-started-using-mksapkg)
 4. [WRITE YOUR OWN APKG.RC FILE](#write-your-own-apkgrc-file)
-5. [APPS PACKAGE NAMING RULES & HEADER DEFINITION](#apps-package-naming-rules-header-definition)
+5. [APPS PACKAGE NAMING RULES AND HEADER DEFINITION](#apps-package-naming-rules-and-header-definition)
 6. [WHEN WILL SHELL SCRIPT FILES BE CALLED](#when-will-shell-script-files-be-called)
 7. [APP SERVER](#app-server)
 8. [SAMPLE APP PACKAGE WITHOUT WEB UI](#sample-app-package-without-web-ui)
