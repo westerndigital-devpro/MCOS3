@@ -590,7 +590,7 @@ Icon naming rules: Package_name.png.
 
 When package name is hello, you should rename icon file as hello.png. And make sure the icon can be found in the /var/www/hello/hello.png.
 
-Put your html, jpg, css files in the webpage directory. You should link webpage to /var/www/hello, because the root path of web server is /var/www.
+Put your html, jpg, css files in the webpage directory. You should link webpage to /var/www/hello, because the root path of web server is /var/www .
 
 When you implement cgi functions, you should link to /var/www/cgi-bin. Just write it down on init.sh script file. And remember to add remove link command on clean.sh script file.
 
