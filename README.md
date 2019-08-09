@@ -2,7 +2,7 @@
 ----
 
 ## CONTENTS
-1. [INTRODUCTION](#intro)
+1. [INTRODUCTION](#INTRODUCTION)
 2. [APPS PACKAGE SDK V2.0](#appspackagesdk)
 3. [GETTING STARTED: USING MKSAPKG](#getstarted)
 4. [WRITE YOUR OWN APKG.RC FILE](#writeapkg)
